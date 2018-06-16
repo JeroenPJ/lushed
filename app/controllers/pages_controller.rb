@@ -8,4 +8,11 @@ class PagesController < ApplicationController
       html: html
     }
   end
+
+
+  def words
+    @body_classes = ["black", "full-height"]
+    @words = ['flower', 'tree', 'lush', 'nature', 'outside']
+    # @words = "http://api.wordnik.com:80/v4/words.json/randomWords?hasDictionaryDef=true&minCorpusCount=0&minLength=5&maxLength=15&limit=5&api_key=#{ENV['WORDNIK_API_KEY']"
+  end
 end
