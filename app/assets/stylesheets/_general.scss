@@ -12,6 +12,10 @@ body.black {
   color: #fff;
 }
 
+h1, h2, h3, h4, h5, p, a, ul, ol, li {
+  font-family: $body-font;
+}
+
 p {
   margin: 0;
 }
