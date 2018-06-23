@@ -2,7 +2,18 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  min-height: 100%;
+}
+
+html { height: 100%; }
+body { min-height: 100%; }
+
+body.black {
+  background: #000;
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, p, a, ul, ol, li {
+  font-family: $body-font;
 }
 
 p {
@@ -23,6 +34,14 @@ a {
   }
 }
 
+.tall-line-height {
+  line-height: 1.5;
+}
+
+.full-height {
+  height: 100%;
+}
+
 .center {
   margin-left: auto;
   margin-right: auto;
@@ -30,4 +49,30 @@ a {
 
 .text-center {
   text-align: center;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-list-markup {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.back-home {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  color: #000;
+
+  &.white {
+    color: #fff;
+  }
 }
