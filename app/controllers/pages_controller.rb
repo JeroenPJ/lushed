@@ -8,4 +8,12 @@ class PagesController < ApplicationController
       html: html
     }
   end
+
+  def fade
+    @text = [
+      [:away, 'https://www.'],
+      [:stay, 'lushed.co'],
+      [:away, '/fade']
+    ]
+  end
 end
