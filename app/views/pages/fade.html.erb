@@ -22,6 +22,25 @@
       }
 
       intervalID = setInterval(fade, interval);
+
+
+      // cool title
+      function set_title(title) {
+        $(document).attr("title", title);
+      }
+
+      var index = 0;
+      var thing = ".";
+      var word = "lushed";
+
+      function update_title() {
+        var title = word.split("");
+        title.splice(index % (title.length + 1), 0, thing);
+        set_title(title.join(""));
+        index++;
+      }
+
+      setInterval(update_title, 2700);
     });
   </script>
 <% end %>
