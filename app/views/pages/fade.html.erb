@@ -1,0 +1,27 @@
+<div class="flex-center text-center full-height">
+  <h2 class="text-fade">
+    <% @text.each do |text| %><%= link_to_if !text[2].nil?, text[2] do %><span class="<%= text[0] %>"><%= text[1] %></span><% end %><% end %>
+  </h2>
+</div>
+
+<% content_for(:after_js) do %>
+  <script>
+    $(function() {
+      var $away = $('.text-fade .away');
+      var interval = 20;
+      var amount = 0.0009;
+      var intervalID;
+
+      function fade() {
+        var opacity = $away.css('opacity');
+        if (opacity <= 0) {
+          clearInterval(intervalID);
+        } else {
+          $away.css('opacity', opacity - amount);
+        }
+      }
+
+      intervalID = setInterval(fade, interval);
+    });
+  </script>
+<% end %>
