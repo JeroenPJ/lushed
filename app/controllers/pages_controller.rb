@@ -20,7 +20,6 @@ class PagesController < ApplicationController
   end
 
   def fade
-    byebug
     @body_classes = ["black", "full-height"]
 
     @text = [
