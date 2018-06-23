@@ -5,6 +5,11 @@ module ApplicationHelper
     end
   end
 
+  def google_search(terms)
+    terms = terms.join("+") if terms.is_a?(Array)
+    "https://www.google.com/search?q=#{terms}"
+  end
+
   def link_to_if(*args,&block)
     args.insert 1, capture(&block) if block_given?
 

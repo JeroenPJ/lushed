@@ -2,8 +2,11 @@
 
 <div class="flex-center text-center full-height">
   <ul class="no-list-markup">
-    <% @words.each do |word_data| %>
-      <li class="tall-line-height"><%= word_data["word"] %></li>
+    <% @words.each do |word| %>
+      <li class="tall-line-height"><%= link_to word, google_search(word), target: "_blank", class: 'no-href-markup' %></li>
     <% end %>
+
+    <br>
+    <li class="tall-line-height stealth"><%= link_to "all", google_search(@words), target: "_blank", class: 'no-href-markup stealth' %></li>
   </ul>
 </div>
