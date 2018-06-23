@@ -20,11 +20,12 @@ class PagesController < ApplicationController
   end
 
   def fade
+    byebug
     @body_classes = ["black", "full-height"]
 
     @text = [
       [:away, 'https://www.'],
-      [:stay, request.host, root_path],
+      [:stay, 'lushed.co', root_path],
       [:away, '/fade']
     ]
   end
