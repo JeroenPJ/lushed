@@ -1,0 +1,18 @@
+#quotes {
+  max-width: 500px;
+}
+
+
+.quote {
+  font-style: italic;
+  margin-bottom: 50px;
+
+  .by {
+    font-style: normal;
+    text-align: right;
+
+    &:before {
+      content: "- ";
+    }
+  }
+}
