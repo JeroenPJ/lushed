@@ -1,7 +1,8 @@
 <div class="navbar">
   <p id="lushed">lushed</p>
-  <%= link_to "home", root_path %>
-  <%= link_to "words", words_path %>
-  <%= link_to "quotes", quotes_path %>
-  <%= link_to "fade", fade_path %>
+
+  <% links = ["words", "quotes", "fade", "lotus"] %>
+  <% links.each do |link| %>
+    <%= link_to link, send("#{link}_path") %>
+  <% end %>
 </div>

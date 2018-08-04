@@ -21,6 +21,23 @@ p {
 }
 
 a {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover, &:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &.no-href-markup:hover {
+    text-decoration: none;
+  }
+}
+
+a.link {
   &:visited {
     color: $blue;
   }
@@ -68,24 +85,29 @@ a {
   padding: 0;
 }
 
-.no-href-markup {
-  color: inherit;
+$lushed-margin: 15px;
 
-  &:hover {
-    color: inherit;
+.lushed {
+  position: fixed;
+  color: #fff;
+
+  &.black {
+    color: #000;
   }
 }
-
-
-
-.back-home {
+.lushed-top {
   position: fixed;
-  top: 15px;
-  left: 15px;
-
-  color: #000;
-
-  &.white {
-    color: #fff;
-  }
+  top: $lushed-margin;
+}
+.lushed-left {
+  position: fixed;
+  left: $lushed-margin;
+}
+.lushed-bottom {
+  position: fixed;
+  bottom: $lushed-margin;
+}
+.lushed-right {
+  position: fixed;
+  right: $lushed-margin;
 }

@@ -39,4 +39,8 @@ class PagesController < ApplicationController
   def fax
     @body_classes = ["black", "full-height"]
   end
+
+  def lotus
+    @body_classes = ["black", "full-height"]
+  end
 end
