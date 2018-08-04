@@ -35,4 +35,8 @@ class PagesController < ApplicationController
       [:away, '/fade']
     ]
   end
+
+  def fax
+    @body_classes = ["black", "full-height"]
+  end
 end
