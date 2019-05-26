@@ -1,0 +1,9 @@
+<%= simple_form_for @lyric do |f| %>
+  <%= f.input :title %>
+
+  <%= f.rich_text_area :content %>
+
+  <br />
+  <br />
+  <%= f.submit class: 'button' %>
+<% end %>

@@ -2,6 +2,20 @@
 # yarn lockfile v1
 
 
+"@rails/actiontext@^6.0.0-rc1":
+  version "6.0.0-rc1"
+  resolved "https://registry.yarnpkg.com/@rails/actiontext/-/actiontext-6.0.0-rc1.tgz#fe2e467076664b31479b6abc847695b310dcedac"
+  integrity sha512-1QoBeRmBTxBEO4BYYGDAin6yauh5S9SN5FKpZR+K0Hl0QZJodABJa51HoKn+odSHYpJxuEUPHtRWaU8j57ZB1w==
+  dependencies:
+    "@rails/activestorage" "^6.0.0-alpha"
+
+"@rails/activestorage@^6.0.0-alpha":
+  version "6.0.0-alpha"
+  resolved "https://registry.yarnpkg.com/@rails/activestorage/-/activestorage-6.0.0-alpha.tgz#6eb6c0f49bcaa4ad68fcd13a750b9a17f76f086f"
+  integrity sha512-ZQneYyDWrazLFZgyfZ3G4h9Q+TxvSQE5BEenBhvusyAeYMVaYxrZU/PWFcbeyiQe5xz1SeN3g/UejU3ytCYJwQ==
+  dependencies:
+    spark-md5 "^3.0.0"
+
 "@rails/webpacker@3.5":
   version "3.5.3"
   resolved "https://registry.yarnpkg.com/@rails/webpacker/-/webpacker-3.5.3.tgz#8be7f4bfb1ce6f00c3456cbbe3dc363ca72bafc8"
@@ -5244,6 +5258,11 @@ source-map@^0.6.1, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
 
+spark-md5@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/spark-md5/-/spark-md5-3.0.0.tgz#3722227c54e2faf24b1dc6d933cc144e6f71bfef"
+  integrity sha1-NyIifFTi+vJLHcbZM8wUTm9xv+8=
+
 spdx-correct@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/spdx-correct/-/spdx-correct-3.0.0.tgz#05a5b4d7153a195bc92c3c425b69f3b2a9524c82"
@@ -5563,6 +5582,11 @@ trim-newlines@^1.0.0:
 trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
+
+trix@^1.0.0:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-1.1.1.tgz#ca8a3fab4d23d960a17e88441d601cb22a86f5d5"
+  integrity sha512-dNHTcryRK0EmwCyJDOBrG6OznL8HNEVVlecq/xzxLj3M9Eht5DV4yl+eCYX8RKyfrtBcNki+mpKIxESgXaGGZA==
 
 "true-case-path@^1.0.2":
   version "1.0.2"

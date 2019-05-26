@@ -2,18 +2,23 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
+
+  font-family: $body-font;
 }
 
 html { height: 100%; }
 body { min-height: 100%; }
 
+
+body {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
 body.black {
   background: #000;
   color: #fff;
-}
-
-h1, h2, h3, h4, h5, p, a, ul, ol, li {
-  font-family: $body-font;
+  border-color: #fff;
 }
 
 p {
@@ -49,6 +54,12 @@ a.link {
     color: $blue-hover;
     text-decoration: none;
   }
+}
+
+hr {
+  border-color: inherit;
+  border-width: 0;
+  border-bottom-width: 1px;
 }
 
 .tall-line-height {
@@ -99,6 +110,10 @@ a.link {
   padding: 0;
 }
 
+.red {
+  color: $red;
+}
+
 $lushed-margin: 15px;
 
 .lushed {
@@ -124,4 +139,11 @@ $lushed-margin: 15px;
 .lushed-right {
   position: fixed;
   right: $lushed-margin;
+}
+
+.container {
+  width: 95%;
+  max-width: 900px;
+
+  margin: 0 auto;
 }

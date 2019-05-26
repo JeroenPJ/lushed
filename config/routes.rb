@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :lyrics, except: [:show]
+  get 'lyrics/login'
+
   scope controller: :pages do
     get :navbar
     get :words

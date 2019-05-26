@@ -7,12 +7,16 @@
   font-style: italic;
   margin-bottom: 50px;
 
+  p {
+    text-align: left;
+  }
+
   .by {
     font-style: normal;
     text-align: right;
 
     &:before {
-      content: "- ";
+      content: "— ";
     }
   }
 }

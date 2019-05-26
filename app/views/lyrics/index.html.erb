@@ -1,0 +1,19 @@
+<%= render 'shared/back' %>
+
+<div class="flex-center full-height">
+  <div>
+    <h1>lyrics</h1>
+
+    <hr>
+
+    <ul class="no-list-markup">
+      <% @lyrics.each do |lyric| %>
+        <li class="tall-line-height">* <%= link_to lyric.title, edit_lyric_path(lyric) %></li>
+      <% end %>
+    </ul>
+
+    <hr>
+
+    <p><%= link_to "new lyric", new_lyric_path %></p>
+  </div>
+</div>

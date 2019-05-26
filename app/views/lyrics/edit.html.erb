@@ -1,0 +1,15 @@
+<%= render 'shared/back', text: 'all lyrics', href: lyrics_path %>
+
+<div class="container">
+  <br />
+  <h1><%= @lyric.title %></h1>
+  <%= render 'form' %>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <%= link_to "delete lyric", lyric_path(@lyric), method: :delete, data: { confirm: "are you sure? you can't undo this!" }, class: 'red' %>
+</div>
+

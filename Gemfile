@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.4.3'
+ruby '2.5.3'
 
 
 gem 'sprockets', '~> 3.7.2'
@@ -7,7 +7,7 @@ gem 'figaro'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
-gem 'rails', '5.1.4'
+gem 'rails', '~> 6.0.0.beta3'
 gem 'redis'
 
 gem 'autoprefixer-rails'
@@ -24,6 +24,7 @@ group :development do
 end
 
 group :development, :test do
+  gem 'rb-readline'
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'listen', '~> 3.0.5'
