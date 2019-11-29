@@ -11,5 +11,7 @@ Rails.application.routes.draw do
     get :lotus
   end
 
+  get '/:name', to: 'pages#redirect'
+
   root to: 'pages#home'
 end

@@ -42,4 +42,13 @@ class PagesController < ApplicationController
   def lotus
     @body_classes = ["black", "full-height"]
   end
+
+  def redirect
+    # redirect to various links
+    name = params[:name].to_sym
+    links = {
+      chaw: 'https://docs.google.com/presentation/d/1eY4_R_kQwX4HwMs4KcJZtNrtfEtmgu1HfsLPugFpv5Q/edit',
+    }
+    redirect_to links[name]
+  end
 end
