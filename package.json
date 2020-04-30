@@ -5,7 +5,7 @@
     "@rails/actiontext": "^6.0.0-rc1",
     "@rails/webpacker": "3.5",
     "bootstrap": "3",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "trix": "^1.0.0"
   },
   "devDependencies": {
